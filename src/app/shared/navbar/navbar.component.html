@@ -1,0 +1,28 @@
+<nav
+  class="fixed w-full z-50 transition-all duration-300 py-6"
+  [ngClass]="{ glass: isScrolled, 'bg-transparent': !isScrolled }"
+>
+  <div class="container mx-auto px-6 flex justify-between items-center">
+    <a href="#home" class="text-2xl font-semibold">DP</a>
+    <div class="hidden md:flex space-x-8">
+      @for(link of navbarData; track $index) {
+      <a
+        [href]="link.url"
+        class="text-sm font-medium hover:text-primary/80 transition-colors"
+        >{{ link.label }}</a
+      >
+      }
+    </div>
+    @if (isMobile) {
+    <app-dropdown-button>
+      @for(link of navbarData; track $index) {
+      <a
+        [href]="link.url"
+        class="block text-sm font-medium hover:text-primary/80 transition-colors"
+        >{{ link.label }}</a
+      >
+      }
+    </app-dropdown-button>
+    }
+  </div>
+</nav>

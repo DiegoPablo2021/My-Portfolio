@@ -1,0 +1,22 @@
+<div class="min-h-screen flex flex-col">
+    <app-navbar></app-navbar>
+
+
+  @defer {
+    <main class="flex-grow">
+      <app-hero-section></app-hero-section>
+      <app-about-me></app-about-me>
+      <app-experiences></app-experiences>
+      <app-badges></app-badges>
+      <app-hard-skills></app-hard-skills>
+      <app-soft-skills></app-soft-skills>
+      <app-projects-section></app-projects-section>
+      <app-get-in-touch></app-get-in-touch>
+      <app-footer></app-footer>
+    </main>
+  } @placeholder {
+    <main class="flex-grow flex justify-center items-center">
+      <p class="text-gray-500">Loading content...</p>
+    </main>
+  }
+</div>

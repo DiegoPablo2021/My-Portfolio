@@ -1,0 +1,5 @@
+export const AboutData: Array<string> = [
+  "I'm a Junior Data Analyst with experience in data analysis, processing and visualization projects. I know Python, SQL, Power BI, and cloud tools such as Azure and Databricks. I'm passionate about turning data into insights that help make strategic decisions. I'm always looking to learn and evolve, combining analytical thinking with good communication to deliver value in every project.",
+  "I have a degree in Systems Analysis and Development, as well as previous experience in customer service and sales, which allows me to understand business needs with empathy and a focus on results. I currently work for a multinational company, contributing data-based solutions to different areas of the organization.",
+  "In addition to my technical skills, I value collaboration, adaptability, and continuous improvement. I'm currently expanding my knowledge in data engineering and advanced analytics, aiming to deliver even more impactful solutions. My mission is to use data not just to inform, but to drive meaningful change in the business landscape."
+];

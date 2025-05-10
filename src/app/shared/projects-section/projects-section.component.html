@@ -1,0 +1,13 @@
+<section class="section-padding animate-fade-in" id="projects">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <div class="text-center space-y-4">
+      <h2 class="text-3xl font-bold">Projects</h2>
+      <p class="text-muted-foreground">Some of my recent works</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      @for(project of projects; track $index) {
+        <app-project-card [project]="project"></app-project-card>
+      }
+    </div>
+  </div>
+</section>

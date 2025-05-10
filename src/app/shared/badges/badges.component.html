@@ -1,0 +1,48 @@
+<section id="badges" class="section-padding animate-fade-in">
+  <div class="max-w-6xl mx-auto space-y-8">
+    <!-- Title and Subtitle -->
+    <div class="text-center space-y-4">
+      <h2 class="text-3xl font-bold">Badges</h2>
+      <p class="text-muted-foreground">Here are some of the badges I've earned</p>
+    </div>
+
+    <!-- Badges List -->
+    <div class="flex flex-wrap justify-center gap-6">
+      <div
+        *ngFor="let badge of badges"
+        class="w-64 bg-secondary/50 border border-gray-300 rounded-lg shadow-lg p-4 text-center transition-transform transform hover:scale-105"
+      >
+        <a [href]="badge.link" target="_blank" class="block">
+          <img
+            [src]="badge.image"
+            alt="{{ badge.name }}"
+            class="w-full h-40 object-contain rounded-lg mb-4"
+          />
+
+          <h3 class="text-lg font-semibold mb-2">{{ badge.name }}</h3>
+
+          <p class="text-sm mb-2">{{ badge.desc }}</p>
+
+          <div class="text-sm font-medium text-gray-700">
+            <strong>Skills:</strong>
+            <div class="flex flex-wrap gap-2 justify-center mt-2">
+              <span
+                *ngFor="let skill of badge.skills"
+                class="bg-secondary px-3 py-1 rounded-full text-xs"
+              >
+                {{ skill }}
+              </span>
+            </div>
+          </div>
+
+          <p class="text-xs text-gray-500">
+            <strong>Issued At:</strong> {{ badge.issued_at }}
+          </p>
+          <p class="text-xs text-gray-500">
+            <strong>Created by:</strong> {{ badge.created_by_name }}
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

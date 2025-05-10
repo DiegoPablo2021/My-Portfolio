@@ -1,0 +1,24 @@
+<div class="mt-4 mb-4 space-y-2">
+  <div class="space-y-2">
+    <!-- Skill Title and Icon -->
+    <div class="flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div [innerHTML]="svgIcon"></div>
+        <h3 class="font-semibold">{{ skill.name }}</h3>
+      </div>
+      <span class="text-sm text-muted-foreground">
+        @let skillPercentage = skill.percentage; @switch (true) { @case
+        (skillPercentage >= 75) { Strong } @case (skillPercentage >= 60) {
+        Intermediate } @default { Basic } } ({{ skill.percentage }}%)
+      </span>
+    </div>
+    <!-- Skill Bar Progress -->
+    <div class="relative w-full overflow-hidden rounded-full bg-secondary h-2">
+      @let percentageDifference = skillPercentage - 100;
+      <div
+        class="h-full w-full flex-1 bg-primary transition-all"
+        [ngStyle]="{ transform: 'translateX(' + percentageDifference + '%)' }"
+      ></div>
+    </div>
+  </div>
+</div>

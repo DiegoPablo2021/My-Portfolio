@@ -1,0 +1,12 @@
+<section id="about" class="section-padding animate-fade-in">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <div class="space-y-4 text-center">
+      <h2 class="text-3xl font-bold">About Me</h2>
+      @for (about of aboutData; track $index) {
+        <p class="text-muted-foreground">
+          {{ about }}
+        </p>
+      }
+    </div>
+  </div>
+</section>

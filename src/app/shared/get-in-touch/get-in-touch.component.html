@@ -1,0 +1,14 @@
+<section id="contact" class="section-padding animate-fade-in">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <!-- Title and Subtitle -->
+    <div class="text-center space-y-4">
+      <h2 class="text-3xl font-bold">Get in Touch</h2>
+      <p class="text-muted-foreground">Let's work together on something great</p>
+    </div>
+    <div class="flex justify-center space-x-6">
+      @for (getInTouch of getInTouchData; track $index) {
+        <app-get-in-touch-button [getInTouch]="getInTouch"></app-get-in-touch-button>
+      }
+    </div>
+  </div>
+</section>

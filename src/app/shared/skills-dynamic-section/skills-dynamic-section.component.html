@@ -1,0 +1,15 @@
+<section [ngClass]="{'bg-secondary/50': secondaryColor}" class="section-padding animate-fade-in" [id]="skillData?.id" >
+  <div class="max-w-4xl mx-auto space-y-8">
+    <!-- Title and Subtitle - Skills -->
+    <div class="text-center space-y-4">
+      <h2 class="text-3xl font-bold">{{ skillData?.title }}</h2>
+      <p class="text-muted-foreground">{{ skillData?.subtitle}}</p>
+    </div>
+    <!-- Skills Progesssion -->
+    <div class="space-y-6">
+      @for (skill of skillData?.skills; track $index) {
+        <app-skill-description [skill]="skill"></app-skill-description>
+      }
+    </div>
+  </div>
+</section>

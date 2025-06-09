@@ -1,28 +1,27 @@
-<div 
-  class="glass rounded-lg overflow-hidden hover:scale-105 transition-transform">
-  
+<div class="glass rounded-lg overflow-hidden hover:scale-105 transition-transform h-full flex flex-col">
+
   <div class="relative w-full" style="padding-bottom: 65.25%;">
     <div class="absolute inset-0">
       <img [src]="project.imageUrl" alt="Cover" class="object-cover w-full h-full" />
     </div>
   </div>
 
-  <div class="p-6 space-y-4 flex flex-col h-full group">
+  <div class="p-6 space-y-4 flex flex-col flex-grow group">
     <h3 class="text-xl font-semibold truncate">{{ project.title }}</h3>
-    <p class="text-muted-foreground flex-grow truncate group-hover:overflow-visible group-hover:whitespace-normal group-hover:line-clamp-none transition-all" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+    
+    <p class="text-muted-foreground flex-grow truncate group-hover:overflow-visible group-hover:whitespace-normal group-hover:line-clamp-none transition-all">
       {{ project.description | slice:0:80 }}...
     </p>
 
     @if (isHovered) {
       <div
-      class="absolute text-white p-2 rounded-lg max-w-xs opacity-80 bottom-0 left-0 z-10 mt-2 shadow-lg text-sm"
-      [style.background-color]="'#333333'"
-      [style.width.%]="100"
-    >
-      {{ project.description }}
-    </div>
+        class="absolute text-white p-2 rounded-lg max-w-xs opacity-80 bottom-0 left-0 z-10 mt-2 shadow-lg text-sm"
+        [style.background-color]="'#333333'"
+        [style.width.%]="100"
+      >
+        {{ project.description }}
+      </div>
     }
-
 
     <div class="flex space-x-4 mt-auto">
       <a [href]="project.viewLink" target="_blank" class="text-sm font-medium hover:underline">View Project</a>

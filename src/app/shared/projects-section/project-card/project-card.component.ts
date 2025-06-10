@@ -13,12 +13,10 @@ export class ProjectCardComponent {
   @Input() project!: Project;
   isHovered: boolean = false;
 
-  @HostListener('mouseenter')
   onMouseEnter() {
     this.isHovered = true;
   }
-
-  @HostListener('mouseleave')
+  
   onMouseLeave() {
     this.isHovered = false;
   }

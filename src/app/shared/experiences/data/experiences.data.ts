@@ -8,13 +8,21 @@ export interface Experience {
 }
 
 export const EXPERIENCES: Experience[] = [
+        {
+        id: 0,
+        title: 'Data Analyst',
+        company: 'TCS (Tata Consultancy Services)',
+        location: 'Remote',
+        description: 'Working as a data analyst at TCS, my main activity is to assist audits with reports to bring improvements to the customers. Using the following tools: Genesys, Excel, Power BI with DAX, Power Automate, Power Point, ETL to extract insights.',
+        period: 'Apr 2025 - Present',
+    },
     {
         id: 1,
         title: 'Data Analyst',
         company: 'Capgemini',
         location: 'Remote',
         description: 'Working as a data analyst, I have been using languages ​​and tools such as: SQL, Python, Excel, Power BI, Tableau, Database, Azure and Databricks. I also studied low-code with PegaSystems.',
-        period: 'Set 2024 - Present',
+        period: 'Set 2024 - Mar 2025',
     },
     {
         id: 2,
@@ -35,7 +43,7 @@ export const EXPERIENCES: Experience[] = [
     },
     {
         id: 4,
-        title: 'Intern Software Enginneer',
+        title: 'Junior Software Engineer',
         company: 'Banco PAN',
         location: 'Remote',
         description: 'I worked as a software engineer, developing banners and landing pages for promotions, ensuring a fluid and responsive user experience. In addition, I contributed to the optimization of this experience by developing a promotions page and working on the approval and production of software through the Lumis platform.',

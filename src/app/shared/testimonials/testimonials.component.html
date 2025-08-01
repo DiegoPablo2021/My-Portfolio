@@ -1,0 +1,38 @@
+<section id="testimonials" class="mt-4 py-8 sm:py-24">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <div class="text-center space-y-4">
+      <h2 class="text-3xl font-bold">Testimonials</h2>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      @for (testimonial of testimonials; track $index) {
+      <div
+        class="bg-card text-card-foreground p-6 rounded-lg shadow-lg flex flex-col"
+      >
+        <div class="flex items-center space-x-4 mb-4">
+          <a [href]="testimonial.profileLink" target="_blank">
+            <img
+              class="h-12 w-12 rounded-full object-cover"
+              [src]="testimonial.profileImg"
+              [alt]="testimonial.fullName + ' profile img'"
+            />
+          </a>
+          <div class="flex-grow">
+            <p
+              class="font-semibold text-foreground"
+              [textContent]="testimonial.fullName"
+            ></p>
+            <p class="text-sm text-muted-foreground">
+              {{ testimonial.relationship.relationDate | date : "dd/MM/yyyy" }}
+            </p>
+          </div>
+        </div>
+
+        <div class="text-muted-foreground">
+          <p>"{{ testimonial.relationship.relationDescription }}"</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>

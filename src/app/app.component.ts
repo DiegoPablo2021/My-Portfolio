@@ -9,6 +9,7 @@ import { GetInTouchComponent } from "./shared/get-in-touch/get-in-touch.componen
 import { ExperiencesComponent } from "./shared/experiences/experiences.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { BadgesComponent } from "./shared/badges/badges.component";
+import { TestimonialsComponent } from "./shared/testimonials/testimonials.component";
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ import { BadgesComponent } from "./shared/badges/badges.component";
     ProjectsSectionComponent,
     GetInTouchComponent,
     ExperiencesComponent,
-    FooterComponent
+    FooterComponent,
+    TestimonialsComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

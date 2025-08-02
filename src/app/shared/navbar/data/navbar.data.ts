@@ -33,6 +33,10 @@ export const NAVBAR_DATA = [
     url: "#projects"
   },
   {
+    label: 'Testimonials',
+    url: '#testimonials'
+  },
+  {
     label: 'Contact',
     url: "#contact"
   }

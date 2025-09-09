@@ -4,7 +4,7 @@ export const Testimonials: Array<Testimonial> = [
   {
     fullName: 'Deyvid Santos',
     profileImg:
-      'https://media.licdn.com/dms/image/v2/D4D03AQEaoUTN0Wz9BQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1697589634492?e=1756944000&v=beta&t=JrDC7odTsE3M6bLtab6zqVkh6OaHkh8sWMPL4cDND3s',
+      'assets/img/deyvid_pic.jpg',
     jobTitle: 'Web Developer | Java, AWS & Angular Expert',
     relationship: {
       relationDate: new Date('June 23, 2025 00:00:00'),
@@ -16,7 +16,7 @@ export const Testimonials: Array<Testimonial> = [
   {
     fullName: 'Mirraely M.',
     profileImg:
-      'https://media.licdn.com/dms/image/v2/D4D03AQGd6EyQ76JvFQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718235098569?e=1756944000&v=beta&t=SHuY-FtmpAfYVXLzB-jDexSHUN4urUFxpuojNHYhQj0',
+      'assets/img/mirraely_pic.jpg',
     jobTitle: 'Desenvolvedora Web | Front-end',
     relationship: {
       relationDate: new Date('October 11, 2024 00:00:00'),
@@ -28,7 +28,7 @@ export const Testimonials: Array<Testimonial> = [
   {
     fullName: 'Lucas Silva',
     profileImg:
-      'https://media.licdn.com/dms/image/v2/D4D03AQEiKEMbnO0V0Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1723833953211?e=1756944000&v=beta&t=DN_fuh9Ve-bOR2znZsUxHjHEzc6s03iylJc7uwUCmaE',
+      'assets/img/lucas_pic.jpg',
     jobTitle: 'Data Engineer | ETL | Azure | AWS',
     relationship: {
       relationDate: new Date('July 3, 2024 00:00:00'),
@@ -40,7 +40,7 @@ export const Testimonials: Array<Testimonial> = [
   {
     fullName: 'Anderson Torres Bessa',
     profileImg:
-      'https://media.licdn.com/dms/image/v2/D4D03AQG4Q4PB_THkug/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1669949609508?e=1756944000&v=beta&t=uuK0MXeVjHzrBWDfaVQmLv2_0GruMlqwmBwZl2PhBgI',
+      'assets/img/anderson_pic.png',
     jobTitle: 'Data Engineer | 2x Microsoft Certified',
     relationship: {
       relationDate: new Date('June 24, 2024 00:00:00'),

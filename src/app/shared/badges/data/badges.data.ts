@@ -28,7 +28,7 @@ export const BADGES_DATA: Badge[] = [
         link: "https://www.credly.com/badges/332c33be-0b2e-4be3-8999-085bdcb73e63/linked_in_profile",
         name: "AWS Partner: Generative AI Essentials",
         created_by_name: "AWS Partner",
-        image: "https://images.credly.com/size/340x340/images/145a5de8-7390-4d57-b4cb-a10e2f9394e2/image.png",
+        image: "https://images.credly.com/images/4b547104-5ce9-43d5-8708-a7abb4b0c7ec/blob",
         issued_at: "2024-12-14",
         desc: "Generative AI Essentials",
         skills: [

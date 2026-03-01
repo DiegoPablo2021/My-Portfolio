@@ -7,7 +7,7 @@
       <!-- Left side -->
       <div class="text-center md:text-left space-y-6 max-w-2xl">
         <h1 class="text-4xl md:text-6xl font-bold">
-          {{ heroInfo?.title }}<span class="text-primary">{{ heroInfo?.name }}</span>
+          {{ heroInfo?.title }}<span class="text-gradient glow-effect font-extrabold">{{ heroInfo?.name }}</span>
         </h1>
 
         <h2 class="text-3xl md:text-5xl font-medium">{{ typedText$ | async }}</h2>
@@ -20,7 +20,7 @@
         <div class="flex justify-center md:justify-start space-x-4">
           <a
             href="#contact"
-            class="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
+            class="inline-flex items-center px-6 py-3 btn-premium rounded-lg rounded-full font-semibold"
           >
             Get in touch
             <svg
@@ -43,9 +43,9 @@
       </div>
 
       <!-- Right side -->
-       <div class="w-full max-w-md">
+       <div class="w-full max-w-md animate-float">
         <div style="position: relative; width: 100%; padding-bottom: 100%;">
-          <div class="rounded-full overflow-hidden shadow-xl border-4 border-primary/20" style="position: absolute; inset: 0px;">
+          <div class="rounded-full overflow-hidden shadow-2xl border-4 border-primary/50 glow-effect" style="position: absolute; inset: 0px;">
             <img class="object-cover w-full h-full" srcset="assets/img/diego-pablo-400w.avif 400w, assets/img/diego-pablo-600w.avif 600w, assets/img/diego-pablo-800w.avif 800w"
             sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (min-width: 601px) 800px"
             src="assets/img/diego-pablo.png"

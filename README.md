@@ -1,59 +1,44 @@
-# PortfolioDiegoAngular
+# Portfolio Diego Pablo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+Welcome to my personal portfolio! This project showcases my skills, experiences, and recent works, wrapped in a modern, premium, and interactive user interface.
 
-## Development server
+![Aesthetic Demonstration](public/assets/img/demo.webp)
 
-To start a local development server, run:
+## 🚀 Overview
 
-```bash
-ng serve
-```
+This portfolio is built to provide an excellent first impression. It features:
+- **Premium Aesthetics**: A dark, sleek theme with vibrant purple and cyan gradient accents.
+- **Glassmorphism Design**: Frosted, translucent cards (`.glass-card`) that give a modern layered feel.
+- **Micro-Animations**: Smooth floating animations on the hero image and sleek scale-up effects on hover for buttons and project cards.
+- **Dynamic Content**: Data-driven components for experiences, projects, skills, and badges.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Technology Stack
 
-## Code scaffolding
+- **Framework**: Angular 19+
+- **Styling**: Tailwind CSS & Custom Vanilla CSS (for glassmorphism & gradients)
+- **Language**: TypeScript
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📂 Project Structure
 
-```bash
-ng generate component component-name
-```
+- `src/app/shared/` - Contains all reusable UI components (Hero, About Me, Experiences, Projects, etc.)
+- `public/assets/css/styles.css` - Global design system containing custom utility classes (`.text-gradient`, `.glow-effect`, `.glass-card`).
+- `public/assets/img/` - Static assets and optimized images.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 💻 Local Development
 
-```bash
-ng generate --help
-```
+To run this project locally, make sure you have [Node.js](https://nodejs.org/) and [Angular CLI](https://github.com/angular/angular-cli) installed.
 
-## Building
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
+4. Open your browser and navigate to `http://localhost:4200/`.
 
-To build the project run:
+## 🤝 Contact
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Feel free to reach out to me via the "Get in touch" section on the website or through my social media channels listed on the portfolio!

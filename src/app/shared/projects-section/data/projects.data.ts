@@ -1,6 +1,6 @@
 import { Project } from "../project-card/project.interface";
 
-export const PROJECTS_DATA: Array<Project> =  [
+export const PROJECTS_DATA: Array<Project> = [
   {
     title: 'Data Dashboard',
     description: 'Interactive commercial dashboard developed in Power BI, featuring detailed business metrics and KPIs',
@@ -16,10 +16,10 @@ export const PROJECTS_DATA: Array<Project> =  [
   //   imageUrl: 'assets/projects/02-etl.jpg',
   // },
   {
-    title: 'Triggo Case Study',
-    description: 'This project aims to carry out a complete analysis of sales data from the Brazilian e-commerce site Olist, in order to extract relevant insights into commercial performance, customer behavior, delivery logistics and satisfaction.',
+    title: 'Triggo Case Study (Senior-level ML Pipeline)',
+    description: 'A comprehensive, Object-Oriented Machine Learning pipeline and Analytics Dashboard built during a professional technical test. Features fully automated Clustering with dynamic Silhouette Score logic, centralized logging, Pytest integration, and actionable Marketing strategies for Business metrics out of the Olist e-commerce massive dataset.',
     viewLink: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/notebooks/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/02-etl.jpg'
+    imageUrl: 'assets/projects/triggo_demo.gif'
   }
 ];

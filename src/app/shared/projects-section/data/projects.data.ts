@@ -20,6 +20,6 @@ export const PROJECTS_DATA: Array<Project> = [
     description: 'A comprehensive, Object-Oriented Machine Learning pipeline and Analytics Dashboard built during a professional technical test. Features fully automated Clustering with dynamic Silhouette Score logic, centralized logging, Pytest integration, and actionable Marketing strategies for Business metrics out of the Olist e-commerce massive dataset.',
     viewLink: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/ml_pipeline.png'
+    imageUrl: 'assets/projects/ml_pipeline_dashboard.png'
   }
 ];
